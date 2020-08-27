@@ -55,7 +55,7 @@ def processMessage(message):
         return 'Help'+response
 
 
-# this function makes a GET request to the Sefaria API  
+# this function makes a GET request to the Sefaria API
 def returnMishnah(dict):
     # read book and perek into response
     # this function has just lots of data monipulation to get it into the right format
@@ -86,7 +86,7 @@ def translate(val):
 
 load_dotenv()
 # API token
-TOKEN = 'NzIxNjQ5NjUxODc4NDYxNDUz.XuXqUg.gCakSDsbfb5J7YYsD-alEVYQ-lo'
+TOKEN = 'MY DISCORD API TOKEN'
 client = discord.Client()
 
 @client.event
