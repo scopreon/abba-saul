@@ -16,11 +16,23 @@ The main function we wanted was to be able to print a chosen Mishnah into the ch
 also has a translation functionality which allows us to translate a single word if we are struggling with the Hebrew.
 
 ##### Modes
- * Fetch: this will fetch the Mishnah from the API (-b: which book, -p: which perek, -m: which mishnah, -o: Only Hebrew[1] or English[2] (Default: Both))
+ * Fetch: this will fetch the Mishnah from the API (-b: which book, -p: which perek, -m: which mishnah, -o: Only Hebrew(1) or English(2) (Default: Both))
  * Translate: this will translate a specific word (-w: word to translate from Hebrew to English)
 ##### Examples
-Command: `abba saul fetch -b berakhot -p 5 -m 5`
-Output: 
+Command: `abba saul fetch -b berakhot -p 5 -m 5` \
+Output: <br>
+![alt text](images/abba_saul_output.png)
+
+Command: `abba saul fetch -b berakhot -p 5 -m 5 -o 2` \
+Output: <br>
+![alt text](images/abba_saul_output_2.png)
+
+Command: `abba saul translate -w הַמִּתְפַּלֵּל` \
+Output: <br>
+![alt text](images/abba_saul_translate.png)
+
+### Programming
+The programming for this project took place over around 5 weeks. I predominantly used Python 3 on my laptop, using pip to install the required libraries. Such as requests and discord.
 
 ### Looking forward
 I plan to add much more in future such as the ability to ask for commentaries and more easy Mishnah navigation. This will be
